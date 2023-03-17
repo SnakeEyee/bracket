@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import "../css/form.css";
 
 const Form = () => {
   // eslint-disable-next-line no-unused-vars
