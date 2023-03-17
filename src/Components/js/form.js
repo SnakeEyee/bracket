@@ -2,6 +2,7 @@ import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Form = () => {
+  // eslint-disable-next-line no-unused-vars
   const [verify, setVerify] = useState(false);
 
   function onChange(value) {
