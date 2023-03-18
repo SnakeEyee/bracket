@@ -28,7 +28,7 @@ body {
   font-size: 200px;
   font-weight: 800;
   float: left;
-  left: 0;
+  left: 50;
   position: relative;
   color: #45f3ff;
   margin-right: 40px;
@@ -148,7 +148,7 @@ body {
 .inputBox input:focus ~ i {
   height: 44px;
 }
-input[type="submit"] {
+button {
   border: none;
   outline: none;
   background: #45f3ff;
@@ -162,13 +162,13 @@ input[type="submit"] {
   transition: 0.5s;
   height: 40px;
 }
-input[type="submit"]:hover {
+button:hover {
   width: 121px;
   height: 50px;
   transition: 0.5s;
   font-size: 20px;
 }
-input[type="submit"]:active {
+button:active {
   opacity: 0.4;
 }
 .select {
