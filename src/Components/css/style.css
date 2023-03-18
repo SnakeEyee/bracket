@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,6 +13,9 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.container {
+  height: auto;
 }
 .text {
   font-size: 75px;
@@ -184,3 +187,9 @@ button:active {
   letter-spacing: 0.05em;
   padding: 4px;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: small;
+  }
+} */
