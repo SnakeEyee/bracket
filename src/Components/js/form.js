@@ -3,7 +3,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import { firestore } from "./firebase";
 import { addDoc, collection } from "firebase/firestore";
 import Select from "react-select";
-import "../css/form.css";
+import "../css/style.css";
 
 const Form = () => {
   const [verify, setVerify] = useState(false);
@@ -52,8 +52,13 @@ const Form = () => {
   }
 
   return (
-    <div className="container">
-      <form className="form" onSubmit={handleSubmit}>
+    <div className="container" style={{ paddingLeft: "70px"}}>
+      <form className="form" onSubmit={handleSubmit} style={{ paddingRight: "50px",
+      height: "570px",
+      paddingBottom: "50px",
+      marginBottom: "150px",
+    marginTop: "100px"}}>
+        <h2 id="title" className="title" style={{ color: "#45f3ff", fontFamily: "monospace"}}>Fill This Form</h2>
         <input
           id="fname"
           placeholder="First Name"
@@ -61,9 +66,7 @@ const Form = () => {
           ref={first_name}
           required
         />
-        <br />
         <input id="lname" placeholder="Last Name" type="text" ref={last_name} />
-        <br />
         <input
           id="id"
           placeholder="Short ID"
@@ -72,9 +75,7 @@ const Form = () => {
           ref={short_id}
           required
         />
-        <br />
-        <label id="example">example: 123456</label>
-        <br />
+        <label id="example" style={{ color: "#45f3ff" }}>example: 123456</label>
         <input
           id="uni-mail"
           placeholder="User ID"
@@ -83,9 +84,7 @@ const Form = () => {
           ref={mail}
           required
         />
-        <br />
-        <label id="example">example: sam123</label>
-        <br />
+        <label id="example" style={{ color: "#45f3ff" }}>example: sam123</label>
         <input
           id="phone"
           placeholder="Telephone"
@@ -94,8 +93,6 @@ const Form = () => {
           ref={phone}
           required
         />
-        <br />
-        <br />
         <Select
           id="branch"
           placeholder="Branch..."
@@ -110,10 +107,27 @@ const Form = () => {
           sitekey="6LdrLAwlAAAAAFQkh-PwwW4ngrInomVhXMIIC6Fw"
           onChange={onChange}
         />
-        <br />
-        <button id="submit" type="submit">
+        <button
+          id="submit"
+          type="submit"
+          style={{
+            backgroundColor: "#3f51b5",
+            color: "#fff",
+            cursor: "pointer",
+            transition: "all 0.3s ease-in-out",
+            marginLeft: "10px",
+            marginRight:"10px",
+            marginTop: "15px",
+            padding: "2px",
+            width: "100%",
+            border:"none",
+            borderRadius:"4px",
+            height:"5%"
+          }}
+        >
           Submit
         </button>
+
       </form>
     </div>
   );
