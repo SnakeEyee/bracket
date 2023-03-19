@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh ;
+  min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -56,6 +56,7 @@ body {
 .form input[type="submit"]:hover {
   background-color: #1a237e;
 }
+
 .form input[type="submit"]:active {
   background-color: #6378ed;
 }
